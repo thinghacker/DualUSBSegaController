@@ -26,6 +26,8 @@ The controller pins are as follows, looking face on to the (female) DB9 plug:
 
 There are two example sketches included which make use of the SegaController library. See "File > Examples > SegaController" in the Arduino IDE after installation. Make sure the digital pins you've wired matches those chosen in the code.
 
+*New* A third example is included with USB Joystick code from https://github.com/mcgurk/Arduino-USB-HID-RetroJoystickAdapter/
+
 ### SegaControllerSerialReader ###
 
 This sketch reads the state of a single controller and reports it via the Serial interface. Note that it only reports when the state has changed (a button has been pressed or released). It's good for validating you've got your pins wired up properly.
