@@ -236,18 +236,18 @@ void loop()
     // Only report controller2 state if it's changed
     if (currentState2 != lastState2)
     {
-        bitWrite(Joystick[1].data[0], 0, !(currentState1 & SC_BTN_A)); //A2
-        bitWrite(Joystick[1].data[0], 1, !(currentState1 & SC_BTN_B)); //B2
-        bitWrite(Joystick[1].data[0], 2, !(currentState1 & SC_BTN_C)); //C2
-        bitWrite(Joystick[1].data[0], 3, !(currentState1 & SC_BTN_START)); //Start2
-        bitWrite(Joystick[1].data[0], 4, !(currentState1 & SC_BTN_X)); //X2
-        bitWrite(Joystick[1].data[0], 5, !(currentState1 & SC_BTN_Y)); //Y2
-        bitWrite(Joystick[1].data[0], 6, !(currentState1 & SC_BTN_Z)); //Z2
-        bitWrite(Joystick[1].data[0], 7, !(currentState1 & SC_BTN_MODE)); //MODE2
-        bitWrite(Joystick[1].data[1], 0, !(currentState1 & SC_BTN_UP)); //UP2
-        bitWrite(Joystick[1].data[1], 1, !(currentState1 & SC_BTN_DOWN)); //DOWN2
-        bitWrite(Joystick[1].data[1], 2, !(currentState1 & SC_BTN_LEFT)); //LEFT2
-        bitWrite(Joystick[1].data[1], 3, !(currentState1 & SC_BTN_RIGHT)); //RIGHT2
+        bitWrite(Joystick[1].data[0], 0, !(currentState2 & SC_BTN_A)); //A2
+        bitWrite(Joystick[1].data[0], 1, !(currentState2 & SC_BTN_B)); //B2
+        bitWrite(Joystick[1].data[0], 2, !(currentState2 & SC_BTN_C)); //C2
+        bitWrite(Joystick[1].data[0], 3, !(currentState2 & SC_BTN_START)); //Start2
+        bitWrite(Joystick[1].data[0], 4, !(currentState2 & SC_BTN_X)); //X2
+        bitWrite(Joystick[1].data[0], 5, !(currentState2 & SC_BTN_Y)); //Y2
+        bitWrite(Joystick[1].data[0], 6, !(currentState2 & SC_BTN_Z)); //Z2
+        bitWrite(Joystick[1].data[0], 7, !(currentState2 & SC_BTN_MODE)); //MODE2
+        bitWrite(Joystick[1].data[1], 0, !(currentState2 & SC_BTN_UP)); //UP2
+        bitWrite(Joystick[1].data[1], 1, !(currentState2 & SC_BTN_DOWN)); //DOWN2
+        bitWrite(Joystick[1].data[1], 2, !(currentState2 & SC_BTN_LEFT)); //LEFT2
+        bitWrite(Joystick[1].data[1], 3, !(currentState2 & SC_BTN_RIGHT)); //RIGHT2
         lastState2 = currentState2;
 #ifdef DEBUG
     serdebugState(currentState1, "JP2: ");
