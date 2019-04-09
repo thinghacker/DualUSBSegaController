@@ -8,6 +8,7 @@ Read Sega Genesis (Mega Drive) and Master System (Mark III) controllers in your 
 2. Open the Arduino IDE
 3. Open "Sketch > Include Library > Add .ZIP Library..."
 4. Select the zip file you downloaded in step 1
+5. If necessary - download the example in https://github.com/thinghacker/SegaController/tree/master/examples/DualUSBSegaController
 
 ## Usage ##
 
