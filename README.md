@@ -36,6 +36,10 @@ This sketch reads the state of a single controller and reports it via the Serial
 
 This sketch reads the state of a single controller and simulates key presses via the Keyboard interface. You can specify which buttons correspond to which keys in the sketch. This sketch requires a 32u4 based board (such as the Leonardo, Micro, or Due).
 
+### DualUSBSegaController ###
+
+This sketch reads the state of up to two controllers and appears as two 8 button USB Gamepads. This sketch requires a 32u4 based board (such as the Pro Micro) and is based on https://github.com/mcgurk/Arduino-USB-HID-RetroJoystickAdapter/tree/master/megadrive.
+
 ## More Info ##
 
 For details on how SegaController reads the controller's state, see [How To Read Sega Controllers](https://github.com/jonthysell/SegaController/wiki/How-To-Read-Sega-Controllers).
